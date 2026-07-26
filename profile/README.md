@@ -1,21 +1,41 @@
-<div align="center">
-  <h1>⚙️ Dehurdle Engineering</h1>
-  <p><b>Architecting the Intelligence Infrastructure for Human Performance.</b></p>
-</div>
+# ⚙️ Dehurdle Engineering
+
+> Real-time voice AI simulation and practice platform for enterprise teams.
+
+Dehurdle builds high-performance, sub-300ms voice AI simulations that allow sales executives, support agents, and leaders to practice critical conversations against dynamic AI avatars.
 
 ---
 
-Standard AI wrappers cannot survive a Fortune 500 CISO audit. That is why we are building something fundamentally different. Dehurdle is a deterministic behavioral intelligence engine built on a proprietary, zero-payload architecture.
+### 📐 Core Engineering & Architecture
 
-### 🛡️ Core Architectural Philosophy
+1. **Sub-300ms Conversational Latency**
+   Full-duplex WebSocket architecture (`@fastify/websocket`) streaming raw PCM audio between browser microphones and Gemini Live AI for instantaneous vocal responses.
 
-1. **Zero-Payload Privacy:** We analyze the *pattern* of work, never the *content*. No employee messages, emails, or documents are ever read, stored, or transmitted to any AI provider. Privacy is the architecture — not a policy checkbox.
-2. **Continuous Behavioral Intelligence:** We translate behavioral science into persistent, compounding intelligence models. Dehurdle possesses longitudinal memory — not amnesic chat sessions.
-3. **Enterprise-Scale Economics:** Purpose-built infrastructure that delivers coaching outcomes at software-level margins without compromising privacy or compliance.
+2. **Enterprise Privacy & CISO Guardrails**
+   Built from the ground up for strict infosec compliance (SOC2 / GDPR / DPDP). Zero customer voice data or transcripts are ever used for model training or shared with third parties.
 
-*(Note: Due to the strict infosec requirements of our enterprise deployments, our core engine repositories and infrastructure are kept strictly private.)*
+3. **Hybrid Event-Driven Stack**
+   Decoupled architecture isolating dashboard REST APIs, high-throughput voice WebSockets, and webhook automation pipelines (Razorpay, WorkOS, Slack Bot).
 
-### 🚀 We Are Hiring Systems Architects
-We don't hire prompt engineers. If you are an elite architect who obsesses over building privacy-preserving AI infrastructure, scalable real-time systems, and enterprise-grade intelligence platforms, we want to talk to you.
+---
 
-📫 **Contact Engineering:** reach@dehurdle.com | 🌐 **Website:** [dehurdle.com](https://dehurdle.com)
+### 📦 Platform Monorepo Architecture
+
+Our core monorepo is structured into specialized, domain-driven services:
+
+| Service | Stack | Purpose |
+| :--- | :--- | :--- |
+| **`main-backend`** | Fastify 5, Node.js, Prisma, PostgreSQL | Core API backend, Gemini Live WebSockets, AWS SES email pipeline, and payment webhooks. |
+| **`main-webapp`** | Next.js 16, React 19, Zustand, Tailwind | Main customer web app, audio streaming engine, and interactive debrief scorecards. |
+| **`main-internal-admin`** | React 19, TypeScript | Multi-tenant admin console for telemetry, seat management, and credit overrides. |
+
+*(Note: Core engine repositories and infrastructure configurations are kept private for enterprise infosec compliance.)*
+
+---
+
+### 🚀 We Are Hiring Systems & AI Engineers
+
+We build real-time voice infrastructure, scalable WebSocket pipelines, and zero-leak privacy engines. If you obsess over low-latency Web Audio, Fastify performance, and clean TypeScript architecture, we want to talk to you.
+
+🌐 **Website:** [dehurdle.com](https://dehurdle.com)  
+📧 **Engineering Careers:** [reach@dehurdle.com](mailto:reach@dehurdle.com)
