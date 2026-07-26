@@ -2,40 +2,28 @@
 
 > Real-time voice AI simulation and practice platform for enterprise teams.
 
-Dehurdle builds high-performance, sub-300ms voice AI simulations that allow sales executives, support agents, and leaders to practice critical conversations against dynamic AI avatars.
+Dehurdle builds high-performance, real-time voice infrastructure designed for enterprise communication training and behavioral performance measurement.
 
 ---
 
-### 📐 Core Engineering & Architecture
+### 🛡️ Core Engineering Principles
 
-1. **Sub-300ms Conversational Latency**
-   Full-duplex WebSocket architecture (`@fastify/websocket`) streaming raw PCM audio between browser microphones and Gemini Live AI for instantaneous vocal responses.
+1. **Zero-Payload Privacy by Architecture**
+   Built from the ground up to pass rigorous Fortune 500 CISO audits. Privacy is engineered directly into our infrastructure—no customer voice recordings or transcripts are ever used for model training.
 
-2. **Enterprise Privacy & CISO Guardrails**
-   Built from the ground up for strict infosec compliance (SOC2 / GDPR / DPDP). Zero customer voice data or transcripts are ever used for model training or shared with third parties.
+2. **Real-Time Voice Infrastructure**
+   Ultra-low latency audio processing engines engineered for natural, fluid vocal roleplays and instant multi-dimensional performance evaluation.
 
-3. **Hybrid Event-Driven Stack**
-   Decoupled architecture isolating dashboard REST APIs, high-throughput voice WebSockets, and webhook automation pipelines (Razorpay, WorkOS, Slack Bot).
+3. **Enterprise-Grade Reliability**
+   Designed for seamless enterprise integration, strict SOC2/GDPR compliance, and high-concurrency multi-tenant scale.
 
----
-
-### 📦 Platform Monorepo Architecture
-
-Our core monorepo is structured into specialized, domain-driven services:
-
-| Service | Stack | Purpose |
-| :--- | :--- | :--- |
-| **`main-backend`** | Fastify 5, Node.js, Prisma, PostgreSQL | Core API backend, Gemini Live WebSockets, AWS SES email pipeline, and payment webhooks. |
-| **`main-webapp`** | Next.js 16, React 19, Zustand, Tailwind | Main customer web app, audio streaming engine, and interactive debrief scorecards. |
-| **`main-internal-admin`** | React 19, TypeScript | Multi-tenant admin console for telemetry, seat management, and credit overrides. |
-
-*(Note: Core engine repositories and infrastructure configurations are kept private for enterprise infosec compliance.)*
+*(Note: Due to strict infosec requirements and proprietary IP protection, our core engine repositories and infrastructure configurations remain private.)*
 
 ---
 
-### 🚀 We Are Hiring Systems & AI Engineers
+### 🚀 We Are Hiring Systems Engineers
 
-We build real-time voice infrastructure, scalable WebSocket pipelines, and zero-leak privacy engines. If you obsess over low-latency Web Audio, Fastify performance, and clean TypeScript architecture, we want to talk to you.
+We build real-time audio infrastructure, privacy-preserving AI systems, and high-concurrency enterprise platforms. If you obsess over low-latency systems engineering and clean architecture, we want to talk to you.
 
 🌐 **Website:** [dehurdle.com](https://dehurdle.com)  
-📧 **Engineering Careers:** [reach@dehurdle.com](mailto:reach@dehurdle.com)
+📧 **Engineering Team:** [reach@dehurdle.com](mailto:reach@dehurdle.com)
